@@ -1,4 +1,4 @@
-// My Own lame solution. 
+// Solution 1:
 // Key Point: You have to record the original indices of every integer before sort them.
 
 class Solution {
@@ -30,5 +30,33 @@ public:
         }
         return res;
         
+    }
+};
+
+
+// Solution 2:
+// Damn! There is always a better solution.....
+class Solution {
+public:
+    vector<int> twoSum(vector<int> &numbers, int target) 
+    {
+        vector<int> res;
+        map<int,int> numbers_map;
+        map<int,int>::iterator itr;
+        for( int i = 0 ; i < numbers.size() ; i++ )
+        {
+            itr = numbers_map.find(target - numbers[i]);
+            if( itr != numbers_map.end() ) // found it!
+            {
+                res.push_back(itr->second);
+                res.push_back(i+1);
+                break;
+            }
+            else  // coundn't find it yet!
+            {
+                numbers_map[numbers[i]] = i+1;
+            }
+        }
+        return res;
     }
 };
