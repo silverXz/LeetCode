@@ -13,7 +13,8 @@ class Solution {
 public:
     void reorderList(ListNode *head) 
     {
-        if( NULL == head || NULL == head->next )
+        // If there is no more than 2 nodes, no need to reorder. Return immediately.
+        if( NULL == head || NULL == head->next || NULL == head->next->next )
             return;
         
         stack<ListNode*> s;
