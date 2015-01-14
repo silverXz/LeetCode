@@ -1,5 +1,7 @@
 // Solution 1:
-// My dummy solution. I believe there's a better one!
+// My dummy solution. O(n) time complexity. O(n) space complexity. Relatively simple code.
+// There's a better solution with O(n) time and O(1) space complexity, by reversing the second half of the list
+// without using stack. But this solution may need more code.
 
 /**
  * Definition for singly-linked list.
