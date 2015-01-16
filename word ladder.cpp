@@ -1,3 +1,7 @@
+// Key #1 : For a word with a length n, there're are 26 * n possible next word. Find those words that in the dictionary and make
+//          them the start of the next step. At the same time, the step counter should increment itself with 1.
+// Key #2 : We use STL queue to store the words we found each step and the step number we've made so far. Kind of like the BFS.
+
 class Solution {
 public:
     int ladderLength(string start, string end, unordered_set<string> &dict) 
