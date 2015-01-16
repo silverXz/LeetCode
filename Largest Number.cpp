@@ -1,3 +1,7 @@
+// Key #1: Convert int to string.
+// Key #2: Sort the string array with approperiate compare function.
+// Key #3: Take care of some specially inputs such as [0,0,0].
+
 class Solution {
 public:
 
