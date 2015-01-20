@@ -1,3 +1,7 @@
+
+// Solution: DP records all the break points for the string. Then backtrace all possible path.
+
+
 class Solution {
 public:
 
